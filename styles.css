@@ -1,0 +1,173 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Black background for the entire page */
+    color: #fff; /* White text color for better contrast */
+}
+
+header {
+    background: #000; /* Black background for header */
+    color: #fff;
+    padding: 1rem 2rem; /* Adjust padding to match section alignment */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section#cv {
+    padding: 2rem;
+    background: #000000; /* Black background for section */
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+section#cv h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: left; /* Align text to the left */
+    color: #ffcd00; /* Change h2 color to #ffcd00 */
+}
+
+.cv-content {
+    display: flex;
+    flex-direction: row; /* Display children in a row */
+    justify-content: flex-start; /* Align children to the start */
+    gap: 2rem; /* Space between text and photo */
+}
+
+.cv-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.cv-text h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #ffcd00; /* Change h3 color to #ffcd00 */
+}
+
+.cv-video {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.cv-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #fff; /* Ensure paragraph text is visible on black background */
+}
+
+.cv-text ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.cv-text ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #fff; /* Ensure list items are visible on black background */
+}
+
+.cv-text a {
+    margin-right: 0px;
+}
+
+.cv-photo {
+    flex: 0 0 auto; /* Prevent the photo from growing */
+}
+
+.cv-photo img {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Adjust max width of the photo */
+    border: 2px solid #fff; /* White border to distinguish image */
+    border-radius: 0; /* Removed rounding from images */
+    margin-left: 120px;
+}
+
+section#work {
+    padding: 2rem;
+    text-align: center;
+    background: #000; /* Black background for section */
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+section#work h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fff; /* Ensure heading is visible on black background */
+}
+
+.work, .project {
+    margin: 4rem 0; /* Increased space between the photos */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content */
+}
+
+.work a, .project a {
+    color: #fff; /* Ensure text is visible on black background */
+    text-decoration: none;
+    text-align: center; /* Center align text */
+}
+
+.work h3, .project h3 {
+    margin-bottom: 2rem; /* Increased space between text and image */
+    font-size: 1.5rem;
+    color: #fff; /* Ensure sub-heading is visible on black background */
+}
+
+.work img, .project img {
+    width: 1000px; /* Fixed width for images */
+    height: 500px; /* Fixed height for images */
+    border: 2px solid #fff; /* White border to distinguish image */
+    border-radius: 0; /* Removed rounding from images */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+
+.work img:hover, .project img:hover {
+    transform: scale(1.1); /* Enlarges the image on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #000; /* Black background for footer */
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
