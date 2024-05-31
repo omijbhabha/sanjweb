@@ -44,20 +44,21 @@ section#cv {
     margin: 2rem auto;
     width: 80%;
     border-radius: 8px;
+    border-bottom: 2px solid #fff; /* Add a white border at the bottom */
 }
 
 section#cv h2 {
-    margin-bottom: 1rem;
     font-size: 2rem;
     text-align: left; /* Align text to the left */
     color: #ffcd00; /* Change h2 color to #ffcd00 */
+    margin-bottom: 1.5rem; /* Add space below the heading */
 }
+
 
 .cv-content {
     display: flex;
     flex-direction: row; /* Display children in a row */
     justify-content: flex-start; /* Align children to the start */
-    gap: 2rem; /* Space between text and photo */
 }
 
 .cv-text {
@@ -75,7 +76,6 @@ section#cv h2 {
     margin-top: 50px;
     text-align: center;
 }
-
 
 .cv-text p {
     margin-bottom: 1.5rem;
@@ -156,6 +156,49 @@ section#work h2 {
 .work img:hover, .project img:hover {
     transform: scale(1.1); /* Enlarges the image on hover */
 }
+
+section#education {
+    padding: 2rem;
+    background: #000; /* Black background for section */
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+section#education h2 {
+    font-size: 2rem;
+    text-align: left; /* Align text to the left */
+    color: #ffcd00; /* Change h2 color to #ffcd00 */
+    margin-bottom: 1.5rem; /* Add space below the heading */
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.education-item {
+    margin-bottom: 2rem; /* Add space between items */
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    color: #ffcd00; /* Change h3 color to #ffcd00 */
+    margin-bottom: 0.5rem; /* Add space below the heading */
+}
+
+.education-item p {
+    color: #fff; /* White text color */
+    margin-bottom: 0.5rem; /* Add space between paragraphs */
+    text-align: left; /* Align text to the left */
+}
+
+/* Ensure consistency with other sections */
+.education-item:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last item */
+}
+
 
 footer {
     text-align: center;
