@@ -51,13 +51,13 @@ section#cv {
     font-family: 'Garamond', serif; /* Change font to Garamond */
 }
 
+
 section#cv h2 {
     font-size: 2rem;
     text-align: left; /* Align text to the left */
     color: #ffcd00; /* Change h2 color to #ffcd00 */
     margin-bottom: 1.5rem; /* Add space below the heading */
 }
-
 
 .cv-content {
     display: flex;
@@ -162,6 +162,47 @@ section#work h2 {
     transform: scale(1.1); /* Enlarges the image on hover */
 }
 
+section#education {
+    background: #000000; /* Black background for section */
+    border-radius: 8px;
+    border-bottom: 2px solid #fff; /* Add a white border at the bottom */
+    font-family: 'Garamond', serif; /* Change font to Garamond */
+}
+
+section#education h2{
+    color: #ffcd00;
+    font-size: 24px;
+     font-size: 2rem;
+     text-align: Centre; /* Align text to the left */
+     color: #ffcd00; /* Change h2 color to #ffcd00 */
+     margin-bottom: 10px; /* Add space below the heading */
+}
+
+section#education h3{
+    color: #ffcd00;
+}
+
+section#experience {
+    background: #000000; /* Black background for section */
+    border-radius: 8px;
+    border-bottom: 2px solid #fff; /* Add a white border at the bottom */
+    font-family: 'Garamond', serif; /* Change font to Garamond */
+}
+
+section#experience h2{
+    color: #ffcd00;
+    font-size: 24px;
+     font-size: 2rem;
+     text-align: Centre; /* Align text to the left */
+     color: #ffcd00; /* Change h2 color to #ffcd00 */
+     margin-bottom: 10px; /* Add space below the heading */
+}
+
+section#experience h3{
+    color: #ffcd00;
+}
+
+
 .timeline {
     position: relative;
     margin: 2rem auto;
@@ -183,34 +224,35 @@ section#work h2 {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: calc(150px + 2rem + 50px); /* Position in the middle */
+    left: calc(150px + 2rem + 20px); /* Position in the middle */
     width: 2px;
-    background-color: #ffcd00;
+    background-color: #ffffff;
 }
 
 .timeline-date {
     flex: 0 0 150px; /* Fixed width for date box */
     padding: 1rem;
-    background-color: #ffcd00;
-    color: #000;
+    color: #ffffff;
     text-align: center;
     border-radius: 8px;
-    font-size: 1rem;
+    font-size: 1rem; /* Increased font size for the date */
     font-weight: bold;
     margin-right: 2rem; /* Space between date and content */
+    margin-top: 5px; /* Move the date down by 5 pixels */
 }
 
 .timeline-content {
     padding: 1rem;
-    background-color: #202C36;
     border-radius: 8px;
     flex-grow: 1; /* Allow content to take up remaining space */
+    text-align: left; /* Left-align the text */
 }
 
 .timeline-title {
     font-size: 1.5rem;
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.1rem; /* Further reduced margin after the title */
 }
+
 
 .timeline-description {
     font-size: 1rem;
@@ -229,9 +271,6 @@ section#work h2 {
     transform: translateY(-50%);
     border: 2px solid #000;
 }
-
-
-
 
 footer {
     text-align: center;
