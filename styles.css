@@ -1,8 +1,5 @@
-To ensure that the `#education` section matches the size of the `#cv` section, you need to set the same `width` and `margin` properties for both sections. Here's the updated CSS with these changes:
-
-```css
-/* Import Baguet Script font */
-@import url('https://fonts.googleapis.com/css2?family=Baguet+Script&display=swap');
+/* Import Lato font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 /* Reset some default browser styles */
 * {
@@ -12,7 +9,7 @@ To ensure that the `#education` section matches the size of the `#cv` section, y
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif; /* Updated font to Lato */
     line-height: 1.6;
     background-color: #000; /* Black background for the entire page */
     color: #fff; /* White text color for better contrast */
@@ -50,8 +47,7 @@ section#cv {
     margin: 2rem auto;
     width: 80%;
     border-radius: 8px;
-    border-bottom: 2px solid #fff; /* Add a white border at the bottom */
-    font-family: 'Garamond', serif; /* Change font to Garamond */
+    font-family: 'Lato', sans-serif; /* Updated font to Lato */
 }
 
 section#cv h2 {
@@ -113,8 +109,16 @@ section#cv h2 {
     height: auto;
     max-width: 500px; /* Adjust max width of the photo */
     border: 2px solid #fff; /* White border to distinguish image */
-    border-radius: 0; /* Removed rounding from images */
     margin-left: 120px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #ffcd00, #ffffff, #ffcd00); /* Gradient line */
+    margin: 2rem auto 3rem; /* More space after the line */
+    width: 80%;
+    box-shadow: 0 2px 10px rgba(255, 205, 0, 0.5); /* Subtle shadow for emphasis */
 }
 
 section#work {
@@ -124,7 +128,7 @@ section#work {
     margin: 2rem auto;
     width: 80%;
     border-radius: 8px;
-    font-family: 'Garamond', serif; /* Change font to Garamond */
+    font-family: 'Lato', sans-serif; /* Updated font to Lato */
 }
 
 section#work h2 {
@@ -165,13 +169,10 @@ section#work h2 {
 }
 
 section#education {
-    padding: 2rem;
     background: #000000; /* Black background for section */
-    margin: 2rem auto;
-    width: 80%; /* Match width to #cv section */
     border-radius: 8px;
-    border-bottom: 2px solid #fff; /* Add a white border at the bottom */
-    font-family: 'Garamond', serif; /* Change font to Garamond */
+    font-family: 'Lato', sans-serif; /* Updated font to Lato */
+    margin-bottom: 2rem; /* Increase space below the education section */
 }
 
 section#education h2 {
@@ -188,8 +189,7 @@ section#education h3 {
 section#experience {
     background: #000000; /* Black background for section */
     border-radius: 8px;
-    border-bottom: 2px solid #fff; /* Add a white border at the bottom */
-    font-family: 'Garamond', serif; /* Change font to Garamond */
+    font-family: 'Lato', sans-serif; /* Updated font to Lato */
 }
 
 section#experience h2 {
@@ -222,8 +222,8 @@ section#experience h3 {
 .timeline-item::before {
     content: '';
     position: absolute;
-    top: 10%; /* Reduce the length from the top */
-    bottom: 10%; /* Reduce the length from the bottom */
+    top: 0;
+    bottom: 0;
     left: calc(150px + 2rem + 20px); /* Position in the middle */
     width: 2px;
     background-color: #ffffff;
@@ -285,4 +285,3 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
-```
