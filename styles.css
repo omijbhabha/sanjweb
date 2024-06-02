@@ -1,3 +1,6 @@
+To ensure that the `#education` section matches the size of the `#cv` section, you need to set the same `width` and `margin` properties for both sections. Here's the updated CSS with these changes:
+
+```css
 /* Import Baguet Script font */
 @import url('https://fonts.googleapis.com/css2?family=Baguet+Script&display=swap');
 
@@ -110,6 +113,7 @@ section#cv h2 {
     height: auto;
     max-width: 500px; /* Adjust max width of the photo */
     border: 2px solid #fff; /* White border to distinguish image */
+    border-radius: 0; /* Removed rounding from images */
     margin-left: 120px;
 }
 
@@ -161,11 +165,13 @@ section#work h2 {
 }
 
 section#education {
+    padding: 2rem;
     background: #000000; /* Black background for section */
+    margin: 2rem auto;
+    width: 80%; /* Match width to #cv section */
     border-radius: 8px;
     border-bottom: 2px solid #fff; /* Add a white border at the bottom */
     font-family: 'Garamond', serif; /* Change font to Garamond */
-    margin-bottom: 2rem; /* Increase space below the education section */
 }
 
 section#education h2 {
@@ -216,8 +222,8 @@ section#experience h3 {
 .timeline-item::before {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 10%; /* Reduce the length from the top */
+    bottom: 10%; /* Reduce the length from the bottom */
     left: calc(150px + 2rem + 20px); /* Position in the middle */
     width: 2px;
     background-color: #ffffff;
@@ -279,3 +285,4 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
+```
