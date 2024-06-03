@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#firstVideo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 98vw;
+    height: 100vh;
+    object-fit: cover; /* Scales the video to fill the viewport */
+}
+
+#secondVideo {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 49vw; /* Adjust width for three videos */
+    height: 100vh;
+    object-fit: cover;
+}
+
+#thirdVideo {
+    position: absolute;
+    top: 100vh;
+    left: 49vw; /* Positioning to the right of the second video */
+    width: 49vw; /* Adjust width for three videos */
+    height: 50vh;
+    object-fit: cover;
+}
+
+#fourthVideo {
+    position: absolute;
+    top:150vh;
+    left: 49vw; /* Positioning to the right of the second video */
+    width: 49vw; /* Adjust width for three videos */
+    height: 50vh;
+    object-fit: cover;
+}
