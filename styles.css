@@ -448,6 +448,46 @@ body {
     height: 50vh;
     object-fit: cover;
 }
+#Video21 {
+    position: absolute;
+    top:690vh;
+    left: 0vw; /* Positioning to the right of the second video */
+    width: 33vw; /* Adjust width for three videos */
+    height: 95vh;
+    object-fit: cover;
+}
+#Video22 {
+    position: absolute;
+    top: 690vh; /* Adjust the top position as needed */
+    left: 33vw; /* Adjust the left position as needed */
+    width: 33vw; /* Adjust the width as needed */
+    height: 95vh; /* Adjust the height as needed */
+    object-fit: cover;
+}
+#Video23 {
+    position: absolute;
+    top: 690vh; /* Adjust the top position as needed */
+    left: 66vw; /* Adjust the left position as needed */
+    width: 32vw; /* Adjust the width as needed */
+    height: 95vh; /* Adjust the height as needed */
+    object-fit: cover;
+}
+#Video24 {
+    position: absolute;
+    top: 785vh;
+    left: 0;
+    width: 98vw;
+    height: 100vh;
+    object-fit: cover; /* Scales the video to fill the viewport */
+}
+#Video25 {
+    position: absolute;
+    top: 885vh;
+    left: 0;
+    width: 98vw;
+    height: 100vh;
+    object-fit: cover; /* Scales the video to fill the viewport */
+}
 
 footer {
     text-align: center;
