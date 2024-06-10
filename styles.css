@@ -54,8 +54,8 @@ section#cv {
 section#cv h2 {
     font-size: 2rem; /* Reduce font size for h2 */
     text-align: left; /* Align text to the left */
-    color: #ffcd00; /* Change h2 color to #ffcd00 */
-    margin-bottom: 1.5rem; /* Add space below the heading */
+    color: #d85668; /* Change h2 color to #d85668 */
+    margin-bottom: 0.5rem; /* Add space below the heading */
 }
 
 .cv-content {
@@ -72,7 +72,11 @@ section#cv h2 {
 .cv-text h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem; /* Reduce font size for h3 */
-    color: #ffcd00; /* Change h3 color to #ffcd00 */
+    color: #d85668; /* Change h3 color to #d85668 */
+}
+
+.cv-text {
+    font-size: 1.2rem
 }
 
 .cv-video {
@@ -82,7 +86,7 @@ section#cv h2 {
 
 .cv-text p {
     margin-bottom: 1.5rem;
-    font-size: 1rem; /* Reduce font size for paragraphs */
+    font-size: 1.2rem; /* Reduce font size for paragraphs */
     color: #fff; /* Ensure paragraph text is visible on black background */
 }
 
@@ -110,7 +114,7 @@ section#cv h2 {
 .cv-photo img {
     width: 100%;
     height: auto;
-    max-width: 500px; /* Adjust max width of the photo */
+    max-width: 400px; /* Adjust max width of the photo */
     border: 2px solid #fff; /* White border to distinguish image */
     margin-left: 120px;
 }
@@ -118,7 +122,7 @@ section#cv h2 {
 hr {
     border: 0;
     height: 1px;
-    background: linear-gradient(to right, #ffcd00, #ffffff, #ffcd00); /* Gradient line */
+    background: linear-gradient(to right, #d85668, #ffffff, #d85668); /* Gradient line */
     margin: 2rem auto 3rem; /* More space after the line */
     width: 80%;
     box-shadow: 0 2px 10px rgba(255, 205, 0, 0.5); /* Subtle shadow for emphasis */
@@ -179,14 +183,14 @@ section#education {
 }
 
 section#education h2 {
-    color: #ffcd00;
+    color: #d85668;
     font-size: 2rem;
     text-align: center; /* Corrected spelling of "center" */
     margin-bottom: 10px; /* Add space below the heading */
 }
 
 section#education h3 {
-    color: #ffcd00;
+    color: #d85668;
 }
 
 section#experience {
@@ -196,14 +200,14 @@ section#experience {
 }
 
 section#experience h2 {
-    color: #ffcd00;
+    color: #d85668;
     font-size: 2rem;
     text-align: center; /* Corrected spelling of "center" */
     margin-bottom: 10px; /* Add space below the heading */
 }
 
 section#experience h3 {
-    color: #ffcd00;
+    color: #d85668;
 }
 
 .timeline {
@@ -277,7 +281,7 @@ section#experience h3 {
     left: calc(150px + 2rem); /* Position in the middle */
     width: 14px;
     height: 14px;
-    background-color: #ffcd00;
+    background-color: #d85668;
     border-radius: 50%;
     transform: translateY(-50%);
     border: 2px solid #000;
