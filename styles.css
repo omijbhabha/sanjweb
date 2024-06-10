@@ -172,37 +172,38 @@ section#work h2 {
 }
 
 .work img:hover, .project img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Enlarges the image on hover */
 }
 
 section#education {
-    background: #000000; 
+    background: #000000; /* Black background for section */
     border-radius: 8px;
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 2rem; 
+    font-family: 'Lato', sans-serif; /* Updated font to Lato */
+    margin-bottom: 2rem; /* Increase space below the education section */
 }
 
 section#education h2 {
     color: #d85668;
     font-size: 2rem;
-    text-align: center; 
-    margin-bottom: 10px; 
+    text-align: center; /* Corrected spelling of "center" */
+    margin-bottom: 10px; /* Add space below the heading */
+}
 
 section#education h3 {
     color: #d85668;
 }
 
 section#experience {
-    background: #000000; 
+    background: #000000; /* Black background for section */
     border-radius: 8px;
-    font-family: 'Lato', sans-serif; 
+    font-family: 'Lato', sans-serif; /* Updated font to Lato */
 }
 
 section#experience h2 {
     color: #d85668;
     font-size: 2rem;
-    text-align: center; 
-    margin-bottom: 10px; 
+    text-align: center; /* Corrected spelling of "center" */
+    margin-bottom: 10px; /* Add space below the heading */
 }
 
 section#experience h3 {
@@ -213,7 +214,7 @@ section#experience h3 {
     position: relative;
     margin: 2rem auto;
     width: 80%;
-    padding: 1rem 0; 
+    padding: 1rem 0; /* Adjust padding to match education */
 }
 
 .timeline-item {
@@ -221,17 +222,18 @@ section#experience h3 {
     flex-direction: row;
     align-items: flex-start;
     padding: 1rem 2rem;
-    margin: 1rem 0; 
+    margin: 1rem 0; /* Adjust margin to match education */
     position: relative;
 }
 
 .timeline-title a {
-    color: inherit; 
-    text-decoration: underline; 
+    color: inherit; /* Remove specific color, inherit from parent */
+    text-decoration: underline; /* Add underline to links */
 }
 
 .timeline-title a:hover {
-    text-decoration: underline; 
+    text-decoration: underline; /* Ensure underline stays on hover */
+}
 
 .timeline-item::before {
     content: '';
@@ -350,8 +352,6 @@ form button {
 form button:hover {
     background-color: #b13b4c;
 }
-
-
 
 
 footer {
