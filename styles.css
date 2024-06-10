@@ -292,206 +292,69 @@ body {
     padding: 0;
 }
 
-#Video1 {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 98vw;
-    height: 100vh;
-    object-fit: cover; /* Scales the video to fill the viewport */
+section#contact {
+    padding: 2rem;
+    background: #000000;
+    margin: 2rem auto;
+    width: 80%;
+    border-radius: 8px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-align: center;
 }
-#Video2 {
-    position: absolute;
-    top: 100vh;
-    left: 0;
-    width: 49vw; /* Adjust width for three videos */
-    height: 100vh;
-    object-fit: cover;
+
+section#contact h2 {
+    font-size: 2rem;
+    color: #d85668;
+    margin-bottom: 1rem;
 }
-#Video3 {
-    position: absolute;
-    top: 100vh;
-    left: 49vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 50vh;
-    object-fit: cover;
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#Video4 {
-    position: absolute;
-    top:150vh;
-    left: 49vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 50vh;
-    object-fit: cover;
+
+form div {
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
 }
-#Video5 {
-    position: absolute;
-    top:200vh;
-    right: 0.9vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 100vh;
-    object-fit: cover;
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
-#Video6 {
-    position: absolute;
-    top:200vh;
-    left: 0vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 50vh;
-    object-fit: cover;
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: inherit;
 }
-#Video7 {
-    position: absolute;
-    top:250vh;
-    left: 0vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 50vh;
-    object-fit: cover;
+
+form button {
+    background-color: #d85668;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
-#Video8 {
-    position: absolute;
-    top: 300vh; /* Adjust the top position as needed */
-    left: 0vw; /* Adjust the left position as needed */
-    width: 33vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
+
+form button:hover {
+    background-color: #b13b4c;
 }
-#Video9 {
-    position: absolute;
-    top: 300vh; /* Adjust the top position as needed */
-    left: 33vw; /* Adjust the left position as needed */
-    width: 33vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
-}
-#Video10 {
-    position: absolute;
-    top: 300vh; /* Adjust the top position as needed */
-    left: 66vw; /* Adjust the left position as needed */
-    width: 32vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
-}
-#Video11 {
-    position: absolute;
-    top:395vh;
-    right: 0.9vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 100vh;
-    object-fit: cover;
-}
-#Video12 {
-    position: absolute;
-    top:395vh;
-    left: 0vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 50vh;
-    object-fit: cover;
-}
-#Video13 {
-    position: absolute;
-    top:445vh;
-    left: 0vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 50vh;
-    object-fit: cover;
-}
-#Video14 {
-    position: absolute;
-    top: 495vh; /* Adjust the top position as needed */
-    left: 0vw; /* Adjust the left position as needed */
-    width: 25vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
-}
-#Video15 {
-    position: absolute;
-    top: 495vh; /* Adjust the top position as needed */
-    left: 25vw; /* Adjust the left position as needed */
-    width: 25vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
-}
-#Video16 {
-    position: absolute;
-    top: 495vh; /* Adjust the top position as needed */
-    left: 50vw; /* Adjust the left position as needed */
-    width: 25vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
-}
-#Video17 {
-    position: absolute;
-    top: 495vh; /* Adjust the top position as needed */
-    left: 75vw; /* Adjust the left position as needed */
-    width: 23vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
-}
-#Video18 {
-    position: absolute;
-    top: 590vh;
-    left: 0;
-    width: 49vw; /* Adjust width for three videos */
-    height: 100vh;
-    object-fit: cover;
-}
-#Video19 {
-    position: absolute;
-    top: 590vh;
-    left: 49vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 50vh;
-    object-fit: cover;
-}
-#Video20 {
-    position: absolute;
-    top:640vh;
-    left: 49vw; /* Positioning to the right of the second video */
-    width: 49vw; /* Adjust width for three videos */
-    height: 50vh;
-    object-fit: cover;
-}
-#Video21 {
-    position: absolute;
-    top:690vh;
-    left: 0vw; /* Positioning to the right of the second video */
-    width: 33vw; /* Adjust width for three videos */
-    height: 95vh;
-    object-fit: cover;
-}
-#Video22 {
-    position: absolute;
-    top: 690vh; /* Adjust the top position as needed */
-    left: 33vw; /* Adjust the left position as needed */
-    width: 33vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
-}
-#Video23 {
-    position: absolute;
-    top: 690vh; /* Adjust the top position as needed */
-    left: 66vw; /* Adjust the left position as needed */
-    width: 32vw; /* Adjust the width as needed */
-    height: 95vh; /* Adjust the height as needed */
-    object-fit: cover;
-}
-#Video24 {
-    position: absolute;
-    top: 785vh;
-    left: 0;
-    width: 98vw;
-    height: 100vh;
-    object-fit: cover; /* Scales the video to fill the viewport */
-}
-#Video25 {
-    position: absolute;
-    top: 885vh;
-    left: 0;
-    width: 98vw;
-    height: 100vh;
-    object-fit: cover; /* Scales the video to fill the viewport */
-}
+
+
+
 
 footer {
     text-align: center;
@@ -504,5 +367,15 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #ffffff; /* Change this to the desired color */
+}
+

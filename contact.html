@@ -10,18 +10,48 @@
     <header>
         <nav>
             <ul>
-                <li><a href=index.html>home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li><a href="work.html">work</a></li>
                 <li><a href="contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Contact Form -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <h2>Contact Me</h2>
+        <form name="contact" method="POST" netlify>
+            <input type="hidden" name="form-name" value="contact">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
+    
+
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/pixel-baba" target="_blank">
+                <img src="linkedin.svg" alt="LinkedIn" width="35" height="35">
+            </a>
+            <a href="https://www.instagram.com/pixel_baba" target="_blank">
+                <img src="instagram.svg" alt="Instagram" width="35" height="35">
+            </a>
+            <a href="https://www.youtube.com/@Pixel_Baba99" target="_blank">
+                <img src="youtube.svg" alt="YouTube" width="35" height="35">
+            </a>
+            <p>pixelababa.work@gmail.com</p>
+        </div>
     </footer>
 </body>
 </html>
