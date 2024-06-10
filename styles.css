@@ -19,6 +19,10 @@ header {
     background: #000; /* Black background for header */
     color: #fff;
     padding: 1rem 2rem; /* Adjust padding to match section alignment */
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    text-align: center; /* Center the header content */
 }
 
 nav ul {
@@ -131,62 +135,23 @@ hr {
 section#work {
     padding: 2rem;
     text-align: center;
-    background: #000; /* Black background for section */
     margin: 2rem auto;
     width: 80%;
     border-radius: 8px;
-    font-family: 'Lato', sans-serif; /* Updated font to Lato */
+    font-family: 'Lato', sans-serif;
 }
 
-section#work h2 {
-    margin-bottom: 1rem;
+section#work h1{
+    color: #d85668;
     font-size: 2rem;
-    color: #fff; /* Ensure heading is visible on black background */
+    text-align: center;
+    margin-bottom: 10px;
 }
-
-.work, .project {
-    margin: 4rem 0; /* Increased space between the photos */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centering the content */
-}
-
-.work a, .project a {
-    color: inherit; /* Remove specific color, inherit from parent */
-    text-decoration: underline; /* Add underline to links */
-    text-align: center; /* Center align text */
-}
-
-.work h3, .project h3 {
-    margin-bottom: 2rem; /* Increased space between text and image */
-    font-size: 1.5rem;
-    color: #fff; /* Ensure sub-heading is visible on black background */
-}
-
-.work img, .project img {
-    width: 1000px; /* Fixed width for images */
-    height: 500px; /* Fixed height for images */
-    border: 2px solid #fff; /* White border to distinguish image */
-    border-radius: 0; /* Removed rounding from images */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
-}
-
-.work img:hover, .project img:hover {
-    transform: scale(1.1); /* Enlarges the image on hover */
-}
-
-section#education {
-    background: #000000; /* Black background for section */
-    border-radius: 8px;
-    font-family: 'Lato', sans-serif; /* Updated font to Lato */
-    margin-bottom: 2rem; /* Increase space below the education section */
-}
-
 section#education h2 {
     color: #d85668;
     font-size: 2rem;
-    text-align: center; /* Corrected spelling of "center" */
-    margin-bottom: 10px; /* Add space below the heading */
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 section#education h3 {
@@ -353,7 +318,6 @@ form button:hover {
     background-color: #b13b4c;
 }
 
-
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -367,6 +331,7 @@ footer p {
     margin: 0;
     font-size: 1.2rem;
 }
+
 footer .social-links {
     margin-top: 10px;
 }
@@ -376,4 +341,3 @@ footer .social-links a {
     text-decoration: none;
     color: #ffffff; /* Change this to the desired color */
 }
-
