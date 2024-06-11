@@ -198,19 +198,16 @@ section#work h1 {
     text-align: left;
 }
 
-.awards {
-    text-align: left; /* Add this line */
-}
 
 .awards h3 {
     margin-bottom: 0.5rem;
-    text-align: left; /* Add this line */
+    text-align: center; /* Add this line */
     color: #d85668;
 }
 
 .awards-images {
     display: flex;
-    justify-content: flex-start;
+    justify-content: centre;
     gap: 20px; /* Add spacing between images */
 }
 
