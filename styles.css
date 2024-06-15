@@ -166,6 +166,7 @@ section#work h1 {
 .work-item h2 {
     text-align: center;
     font-size: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .work-video {
@@ -176,6 +177,25 @@ section#work h1 {
 .work-video iframe {
     width: 800px;
     height: 450px;
+}
+
+.work-image {
+    padding-top: 1.5rem;
+    display:grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap:5px; /* Adjust the gap between images as needed */
+  }
+  
+  .work-image img {
+    width: 100%; /* Make sure images fill their grid cells */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.work-image-spl img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    align-self: center;
 }
 
 .synopsis,
