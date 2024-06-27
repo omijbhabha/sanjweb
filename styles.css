@@ -23,17 +23,60 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background: #000;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: white;
     padding: 1rem 2rem;
-    width: 100%;
-    box-sizing: border-box;
 }
 
-nav {
+.brand-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
+
+.brand-text {
+    display: none; /* Hidden by default */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 .cv, .work, .education, .experience, .contact {
     width: 100%;
     max-width: 1200px; /* Increased from 1000px */
@@ -77,10 +120,10 @@ nav ul li a:hover {
 .cv-video {
     position: relative;
     width: 100%;
-    padding-bottom: 27%; /* 16:9 aspect ratio */
+    padding-bottom: 25%; /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    max-width: 1000px; /* Adjust this value to control maximum width */
+    max-width: 1000px; /* Maximum width, similar to work-video */
     margin: 0 auto; /* Center the video container */
 }
 
@@ -436,9 +479,10 @@ footer .social-links a {
     }
 
     .cv-video {
-        width: 100%; /* Full width on mobile */
-        height: 100000%;
-        margin: 0; /* Remove margin on mobile */
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding-bottom: 56.25%;
     }
 
     .cv-content {
@@ -503,26 +547,45 @@ footer .social-links a {
         margin-left: 0;
         margin-right: 0;
     }
-}
-
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 14px;
+    .brand-text {
+        display: block; /* Show on mobile */
     }
 
-    .cv h2, .work h1, .education h2, .experience h2 {
-        font-size: 1.5rem;
+    .toggle-button {
+        display: flex;
     }
 
-    .timeline-title {
-        font-size: 1.2rem;
+    .navbar-links {
+        display: none;
+        width: 100%;
     }
 
-    .timeline-description {
-        font-size: 0.9rem;
-    }
-    .work-video {
-        padding-bottom: 75%; /* 4:3 aspect ratio for better viewing on small screens */
+     .navbar {
+        flex-wrap: wrap;
     }
 
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .brand-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
 }
